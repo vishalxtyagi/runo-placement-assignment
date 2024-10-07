@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:profile/screens/profile_page.dart';
 
 void main() {
   runApp(const ProfileApp());
