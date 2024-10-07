@@ -26,4 +26,4 @@ flutter:
 
   assets:
     - assets/profile_data.json
-    - assets/profile_img.jpg
+    - assets/profile_img.png

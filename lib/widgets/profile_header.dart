@@ -14,7 +14,7 @@ class ProfileHeader extends StatelessWidget {
       children: [
         const CircleAvatar(
           radius: 50,
-          backgroundImage: AssetImage('assets/profile_picture.jpg'),
+          backgroundImage: AssetImage('assets/profile_picture.png'),
         ),
         const SizedBox(height: 16),
         Text(data.name, style: Theme.of(context).textTheme.headlineMedium),
