@@ -1,0 +1,123 @@
+{
+  "name": "Vishal Tyagi",
+  "title": "Flutter Developer | Full Stack & IoT Engineer",
+  "email": "vishaltyagi.sde@gmail.com",
+  "phone": "+91-7015679021",
+  "education": {
+    "institution": "Panipat Institute of Engineering & Technology",
+    "degree": "Bachelor of Technology - Information Technology",
+    "gpa": "7.22",
+    "duration": "July 2021 - June 2025",
+    "specialization": "Artificial Intelligence & Data Science"
+  },
+  "skills": ["Dart", "Python", "Flutter", "Git", "Android Studio"],
+  "links": [
+    {
+      "name": "Resume",
+      "url": "https://vishalxtyagi.github.io/resume"
+    },
+    {
+      "name": "LinkedIn",
+      "url": "https://www.linkedin.com/in/vishalxtyagi"
+    },
+    {
+      "name": "GitHub",
+      "url": "https://github.com/vishalxtyagi"
+    }
+  ],
+  "experience": [
+    {
+      "title": "Flutter & IoT Engineer (Internship)",
+      "company": "NMOLD (OPC) PRIVATE LIMITED",
+      "location": "Israna, Haryana (Hybrid)",
+      "duration": "April 2024 - August 2024",
+      "description": [
+        "Leading the redevelopment of a comprehensive inventory management system using Flutter for cross-platform application development, Express for backend services, and MongoDB for efficient data management.",
+        "Developed an innovative system for remote monitoring and management of poultry farms using Flutter, allowing authorized industry professionals to oversee operations from remote locations.",
+        "Gained expertise in Siemens and Delta PLCs, setting up and working with simulators and data blocks, enhancing industrial automation capabilities.",
+        "Worked with IoT networks and protocols, including OPC UA client, Node-RED, and Cloudflare Tunnel."
+      ]
+    },
+    {
+      "title": "Mobile Application Developer & ML Engineer (Freelance)",
+      "company": "RGC Engineering Solutions",
+      "location": "Maharashtra (Remote)",
+      "duration": "December 2023 - May 2024",
+      "description": [
+        "Led the redesign of the My Dua app for Ramadan using Flutter, incorporating advanced features for music playback and religious functions, enhancing user engagement and app functionality.",
+        "Contributed to the development of a Flutter-based attendance management project, improving workforce management capabilities for clients."
+      ]
+    },
+    {
+      "title": "Full Stack Developer (Internship)",
+      "company": "Panipat Institute of Engineering and Technology",
+      "location": "Panipat, Haryana (Hybrid)",
+      "duration": "July 2023 - Present",
+      "description": [
+        "Developed and maintained comprehensive college portals, including a feedback portal and the RISE portal, enhancing student-faculty interaction and administrative efficiency.",
+        "Created an advanced exam portal with sophisticated cheating detection features, dynamic random question set creation, and order changing based on detected cheating patterns.",
+        "Implemented robust automation scripts for downloading feedback reports and uploading questions.",
+        "Developed a comprehensive ticketing system integrated with HDFC Bank for secure payments and Interakt for WhatsApp API.",
+        "Built the Kaun Banega Entrepreneur (KBE) web application for hosting engaging quiz competitions.",
+        "Developed a real-time bus route tracking and attendance application, enhancing transportation management and student safety."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Smart Irrigation System",
+      "description": "Developed a smart irrigation system app using NodeMCU and sensors to monitor temperature, humidity, and soil moisture. The Flutter app visualizes real-time data and forecasts irrigation needs with an SVM model.",
+      "technologies": ["Flutter", "NodeMCU", "IoT", "SVM"]
+    },
+    {
+      "name": "Crickiaa - A Gully Cricket Flutter UI App",
+      "description": " Developed a Flutter UI app for managing and tracking gully cricket matches, providing a user-friendly interface for scorekeeping and team management.",
+      "technologies": ["Flutter", "Dart"]
+    }
+  ],
+  "openSourceContributions": [
+    {
+      "name": "Floor Plan Builder",
+      "description": "Flutter package for creating interactive floor plans with customizable tables.",
+      "technologies": ["Flutter", "Dart"]
+    },
+    {
+      "name": "image hotspot",
+      "description": "Flutter package for adding interactive hotspots to images.",
+      "technologies": ["Flutter", "Dart"]
+    }
+  ],
+  "hackathons": [
+    {
+      "name": "Appathon at PIET",
+      "position": "1st Position",
+      "project": "Developed a Teacher Load Management System",
+      "year": "2022"
+    },
+    {
+      "name": "HACKKRMU 2.0",
+      "position": "Top 10 Teams",
+      "project": "Created TeenSage, a chatbot focused on sex education for teenagers",
+      "year": "2023"
+    },
+    {
+      "name": "DU Hacks 2.0",
+      "position": "5th Place out of 125 Teams",
+      "project": "Built a Python-based phishing website detector with features like website preview",
+      "year": "2023"
+    },
+    {
+      "name": "Kavach Internal Hackathon",
+      "position": "Finalist",
+      "project": "Developed a RAM Dump tool for digital forensics, leveraging existing open-source solutions",
+      "year": "2023"
+    }
+  ],
+  "achievements": [
+    "Global Rank 371 in TCS CodeVita Season 11",
+    "Published multiple Flutter packages on pub.dev",
+    "Contributed to open-source Flutter projects",
+    "Developed cross-platform mobile applications using Flutter for various clients and projects",
+    "Implemented IoT solutions using Flutter for data visualization and control"
+  ]
+}
