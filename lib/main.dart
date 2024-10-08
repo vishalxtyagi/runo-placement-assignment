@@ -16,7 +16,8 @@ class ProfileApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: ProfilePage(),
+      debugShowCheckedModeBanner: false,
+      home: const ProfilePage(),
     );
   }
 }

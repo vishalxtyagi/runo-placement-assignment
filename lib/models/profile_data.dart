@@ -10,10 +10,9 @@ class ProfileData {
   final String title;
   final String email;
   final String phone;
-  final String linkedin;
-  final String github;
   final Education education;
-  final Skills skills;
+  final List<Link> links;
+  final List<String> skills;
   final List<Experience> experience;
   final List<Project> projects;
   final List<OpenSourceContribution> openSourceContributions;
@@ -25,9 +24,8 @@ class ProfileData {
     required this.title,
     required this.email,
     required this.phone,
-    required this.linkedin,
-    required this.github,
     required this.education,
+    required this.links,
     required this.skills,
     required this.experience,
     required this.projects,
@@ -36,7 +34,8 @@ class ProfileData {
     required this.achievements,
   });
 
-  factory ProfileData.fromJson(Map<String, dynamic> json) => _$ProfileDataFromJson(json);
+  factory ProfileData.fromJson(Map<String, dynamic> json) =>
+      _$ProfileDataFromJson(json);
   Map<String, dynamic> toJson() => _$ProfileDataToJson(this);
 
   static Future<ProfileData> load() async {
@@ -62,26 +61,23 @@ class Education {
     required this.specialization,
   });
 
-  factory Education.fromJson(Map<String, dynamic> json) => _$EducationFromJson(json);
+  factory Education.fromJson(Map<String, dynamic> json) =>
+      _$EducationFromJson(json);
   Map<String, dynamic> toJson() => _$EducationToJson(this);
 }
 
 @JsonSerializable()
-class Skills {
-  final List<String> Languages;
-  final List<String> Frameworks;
-  final List<String> Tools;
-  final List<String> Platforms;
+class Link {
+  final String name;
+  final String url;
 
-  Skills({
-    required this.Languages,
-    required this.Frameworks,
-    required this.Tools,
-    required this.Platforms,
+  Link({
+    required this.name,
+    required this.url,
   });
 
-  factory Skills.fromJson(Map<String, dynamic> json) => _$SkillsFromJson(json);
-  Map<String, dynamic> toJson() => _$SkillsToJson(this);
+  factory Link.fromJson(Map<String, dynamic> json) => _$LinkFromJson(json);
+  Map<String, dynamic> toJson() => _$LinkToJson(this);
 }
 
 @JsonSerializable()
@@ -100,7 +96,8 @@ class Experience {
     required this.description,
   });
 
-  factory Experience.fromJson(Map<String, dynamic> json) => _$ExperienceFromJson(json);
+  factory Experience.fromJson(Map<String, dynamic> json) =>
+      _$ExperienceFromJson(json);
   Map<String, dynamic> toJson() => _$ExperienceToJson(this);
 }
 
@@ -116,7 +113,8 @@ class Project {
     required this.technologies,
   });
 
-  factory Project.fromJson(Map<String, dynamic> json) => _$ProjectFromJson(json);
+  factory Project.fromJson(Map<String, dynamic> json) =>
+      _$ProjectFromJson(json);
   Map<String, dynamic> toJson() => _$ProjectToJson(this);
 }
 
@@ -132,7 +130,8 @@ class OpenSourceContribution {
     required this.technologies,
   });
 
-  factory OpenSourceContribution.fromJson(Map<String, dynamic> json) => _$OpenSourceContributionFromJson(json);
+  factory OpenSourceContribution.fromJson(Map<String, dynamic> json) =>
+      _$OpenSourceContributionFromJson(json);
   Map<String, dynamic> toJson() => _$OpenSourceContributionToJson(this);
 }
 
@@ -150,6 +149,7 @@ class Hackathon {
     required this.year,
   });
 
-  factory Hackathon.fromJson(Map<String, dynamic> json) => _$HackathonFromJson(json);
+  factory Hackathon.fromJson(Map<String, dynamic> json) =>
+      _$HackathonFromJson(json);
   Map<String, dynamic> toJson() => _$HackathonToJson(this);
 }

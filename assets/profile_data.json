@@ -3,8 +3,6 @@
   "title": "Flutter Developer | Full Stack & IoT Engineer",
   "email": "vishaltyagi.sde@gmail.com",
   "phone": "+91-7015679021",
-  "linkedin": "linkedin.com/in/vishalxtyagi",
-  "github": "github.com/vishalxtyagi",
   "education": {
     "institution": "Panipat Institute of Engineering & Technology",
     "degree": "Bachelor of Technology - Information Technology",
@@ -12,12 +10,21 @@
     "duration": "July 2021 - June 2025",
     "specialization": "Artificial Intelligence & Data Science"
   },
-  "skills": {
-    "Languages": ["Dart", "Python", "PHP", "JavaScript", "SQL", "Bash", "JAVA", "Kotlin", "HTML", "CSS", "Groovy", "Solidity"],
-    "Frameworks": ["Flutter", "Laravel", "Django", "Flask", "NodeJS", "CodeIgniter", "LAMP", "LEMP", "Scikit", "NLTK", "Jenkins"],
-    "Tools": ["Git", "PostgreSQL", "MySQL", "SQLite", "MongoDB", "Docker", "Plesk", "Android Studio", "Appwrite"],
-    "Platforms": ["Linux", "Arduino", "Raspberry Pi", "AWS", "GCP", "DigitalOcean", "Alibaba Cloud", "MuleSoft"]
-  },
+  "skills": ["Dart", "Python", "Flutter", "Git", "Android Studio"],
+  "links": [
+    {
+      "name": "Resume",
+      "url": "https://vishalxtyagi.github.io/resume"
+    },
+    {
+      "name": "LinkedIn",
+      "url": "https://www.linkedin.com/in/vishalxtyagi"
+    },
+    {
+      "name": "GitHub",
+      "url": "https://github.com/vishalxtyagi"
+    }
+  ],
   "experience": [
     {
       "title": "Flutter & IoT Engineer (Internship)",

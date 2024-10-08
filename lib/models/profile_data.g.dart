@@ -11,10 +11,12 @@ ProfileData _$ProfileDataFromJson(Map<String, dynamic> json) => ProfileData(
       title: json['title'] as String,
       email: json['email'] as String,
       phone: json['phone'] as String,
-      linkedin: json['linkedin'] as String,
-      github: json['github'] as String,
       education: Education.fromJson(json['education'] as Map<String, dynamic>),
-      skills: Skills.fromJson(json['skills'] as Map<String, dynamic>),
+      links: (json['links'] as List<dynamic>)
+          .map((e) => Link.fromJson(e as Map<String, dynamic>))
+          .toList(),
+      skills:
+          (json['skills'] as List<dynamic>).map((e) => e as String).toList(),
       experience: (json['experience'] as List<dynamic>)
           .map((e) => Experience.fromJson(e as Map<String, dynamic>))
           .toList(),
@@ -40,10 +42,9 @@ Map<String, dynamic> _$ProfileDataToJson(ProfileData instance) =>
       'title': instance.title,
       'email': instance.email,
       'phone': instance.phone,
-      'linkedin': instance.linkedin,
-      'github': instance.github,
       'education': instance.education.toJson(),
-      'skills': instance.skills.toJson(),
+      'links': instance.links.map((e) => e.toJson()).toList(),
+      'skills': instance.skills,
       'experience': instance.experience.map((e) => e.toJson()).toList(),
       'projects': instance.projects.map((e) => e.toJson()).toList(),
       'openSourceContributions':
@@ -68,22 +69,14 @@ Map<String, dynamic> _$EducationToJson(Education instance) => <String, dynamic>{
       'specialization': instance.specialization,
     };
 
-Skills _$SkillsFromJson(Map<String, dynamic> json) => Skills(
-      Languages:
-          (json['Languages'] as List<dynamic>).map((e) => e as String).toList(),
-      Frameworks: (json['Frameworks'] as List<dynamic>)
-          .map((e) => e as String)
-          .toList(),
-      Tools: (json['Tools'] as List<dynamic>).map((e) => e as String).toList(),
-      Platforms:
-          (json['Platforms'] as List<dynamic>).map((e) => e as String).toList(),
+Link _$LinkFromJson(Map<String, dynamic> json) => Link(
+      name: json['name'] as String,
+      url: json['url'] as String,
     );
 
-Map<String, dynamic> _$SkillsToJson(Skills instance) => <String, dynamic>{
-      'Languages': instance.Languages,
-      'Frameworks': instance.Frameworks,
-      'Tools': instance.Tools,
-      'Platforms': instance.Platforms,
+Map<String, dynamic> _$LinkToJson(Link instance) => <String, dynamic>{
+      'name': instance.name,
+      'url': instance.url,
     };
 
 Experience _$ExperienceFromJson(Map<String, dynamic> json) => Experience(
